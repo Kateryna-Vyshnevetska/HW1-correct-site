@@ -1,2 +1,2 @@
-# HW1-correct-site
-HW1-correct-site
+# goit-markup-hw-02
+Homework2
