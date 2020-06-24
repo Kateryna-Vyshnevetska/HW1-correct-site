@@ -15,13 +15,13 @@ body {
 }
 
 body {
-  font-family: sans-serif, "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.42em;
   min-width: 320px;
-  /* overflow-x: auto;
-  overflow-y: hidden; */
+  overflow-x: hidden;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -71,7 +71,7 @@ textarea {
 }
 
 .layout__sect {
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
 
   width: 1600px;
   padding-top: 94px;
@@ -173,10 +173,12 @@ textarea {
 }
 
 .contact__link-icon {
-  display: flex;
+
   margin-right: 10px;
   fill: #757575;
 }
+
+/* ПОНЯТЬ почему иконка маленькая */
 .contact__link-icon.is--mail {
   width: 16px;
   height: 11px;
@@ -193,9 +195,8 @@ textarea {
 
 /* ................................. */
 .overlay {
-  padding: 0 0;
-  height: 600px;
-
+  max-width: 1920px;
+  margin: 0 auto;
   background-image: linear-gradient(
     to right,
     rgba(47, 48, 58, 0.8), 
@@ -207,25 +208,21 @@ textarea {
   background-repeat: no-repeat;
 }
 
-.hero {
-  text-align: center;
-}
 
 .hero__content {
+  text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .hero__title{
   margin: 0 auto;
   margin-bottom: 30px;
 
-  width: 696px;
+  max-width: 696px;
   color: #fff;
-  font-size: 44px;
 
+  font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -238,16 +235,17 @@ textarea {
   border-radius: 4px;
   color: #FFFFFF;
   background-color: #2196F3;
+}
+
+.btn-text {
   font-weight: bold;
   line-height: 1.8;
-  margin-left: auto;
 }
 
 /* ............................ */
 .box__list {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
 }
 
 .box__item {
@@ -288,17 +286,30 @@ textarea {
 }
 
 .case__item {
-  align-items: center;
+  /* ПРОЧИТАТЬ */
+  position: relative;
 }
 
 .case__item +.case__item {
   margin-left: 30px;
 }
 
+.case__img {
+  display: block;
+  max-width: 100%;
+}
+
 .case__title {
   text-align: center;
-  padding: 27px 82px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 
+  font-weight: 700;
+  text-transform: uppercase;
   line-height: 1.14;
   color: #fff;
   background-color: rgba(47, 48, 58, 0.8);
@@ -307,6 +318,10 @@ textarea {
 /* ............................... */
 .cards {
   background-color: #F5F4FA;
+}
+
+.card__item-filler {
+  padding: 30px 32px 24px 32px;
 }
 
 .cards__list {
@@ -328,12 +343,11 @@ textarea {
 }
 
 .card__img{
-  height: 260px;
-  width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 .card__title {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
 
@@ -345,24 +359,24 @@ textarea {
   font-size: 16px;
 }
 
-.networks__list {
+.social {
   display: flex;
   justify-content: center;
-  padding-bottom: 24px;
+  padding: 0 -5px;
 }
 
-.network__item +.network__item {
-  margin-left: 10px;
+.social__item{
+  margin: 0 5px;
 }
 
-.network__item:hover,
-.network__item:focus {
+.social__item:hover,
+.social__item:focus {
   border-radius: 30px;
   background-color: #2196F3;
   --color4: #fff;
 }
 
-.network__link {
+.social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -370,7 +384,7 @@ textarea {
   height: 44px;
 }
 
-.network__icon {
+.social__icon {
   width: 20px;
   height: 20px;
 }
@@ -436,75 +450,95 @@ textarea {
   background-color: #2F303A;
 }
 
-.footer__list {
-  display: flex;
-}
-
-.footer__link {
-  margin-top: 9px;
-  display: flex;
-  text-decoration: none;
-}
-
-.footer__logo {
-  margin-top: 60px;
-  width: 153px;
-  height: 31px;
-}
-
-.footer__address {
-  line-height: 1.7em;
-  margin-right: 69px;
-}
-
-.footer__geoposition{
-  margin-top: 20px;
-  color: #FFFFFF;
-  }
-  
-
-.footer__input{
-  margin-top: 72px;
-}
-
-.footer__input-text {
-  margin-bottom: 20px;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.footer__btn-link{
-  display: flex;
-  text-decoration: none;
-
-  border-radius: 4px;
-  background-color: #2196F3;
-  font-weight: bold;
-  line-height: 1.8;
-
-}
-
-.btn-link__text {
-  padding: 10px 10px;
-  color: #FFFFFF;
-}
-
-.btn-link__img.is--telegram {
-   width: 44px;
-   height: 44px;
-}
-
-.join {
-  margin-top: 72px;
-  margin-right: 94px;
-}
-
-.join__title {
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.network__item.network--bgc {
+.social--second .social__item {
   border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer__list {
+  display: flex;
+  margin: 60px -34px;
+}
+
+.footer__list-item {
+  padding: 60px 34px;
+}
+
+.mix-list {
+  margin: -4px -4px;
+}
+
+.mix-list__item {
+  padding: 4px 4px;
+}
+
+.mix-list__geoposition{
+  line-height: 1.7em;
+  color: #FFFFFF;
+
+}
+
+.footer__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14em;
+
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.mix-list__link {
+  text-decoration: none;
+}
+
+.mix-list__logo {
+  margin-bottom: 20px;
+}
+
+.social--second {
+  margin-top: 20px;
+}
+
+.footer__mailing-list {
+  margin-top: 20px;
+  display: flex;
+  padding-left: -10px;
+}
+
+.form-input {
+  width: 358px;
+  height: 50px;
+  box-sizing: border-box;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: #2F303A;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.btn__link-img.is--telegram {
+  width: 24px;
+  height: 24px;
+}
+
+.btn.footer--btn{
+  display: flex;
+  align-items: center;
+
+  /* Костыль =(( */
+  margin-left: 10px;
+
+  padding: 10px 10px;
+}
+
+.btn__link-text {
+  padding-right: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8em;
+}
+
+.social--second .social__item:hover,
+.social--second .social__item:focus {
+  background-color: #2196F3;
 }

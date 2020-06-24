@@ -8,7 +8,7 @@
   <title>Web Studio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
@@ -22,6 +22,7 @@
             </svg> 
           </a> 
         </li>
+
         <li class="header__item ">
           <nav class="nav">
             <ul class="nav__list">
@@ -37,6 +38,7 @@
             </ul>
           </nav>
         </li>
+
         <li class="header__item header__contacts">
           <ul class="contacts__list">
             <li class="contact__item">
@@ -57,17 +59,20 @@
             </li>
           </ul>
         </li>
+
       </ul>
     </div>
   </header>
 
   <main class="layout">
 
-    <section class="layout__sect overlay">
-      <div class="container hero">
+    <section class="hero">
+      <div class="overlay">
         <div class="hero__content">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <a class="btn" href="">Заказать услугу</a>
+          <a class="btn" href="">
+            <span class="btn-text">Заказать услугу</span>
+          </a>
         </div>
       </div>
     </section>
@@ -153,169 +158,181 @@
             <div class="card__img">
               <img src="./img/team/person1.png" alt="Фото Джона Смита">
             </div>
-            <h3 class="card__title">John Smith</h3>
-            <p class="card__text">Product Designer</p>
+            <div class="card__item-filler">
+              <h3 class="card__title">John Smith</h3>
+              <p class="card__text">Product Designer</p>
+  
+              <ul class="social">
+      
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Instagram link">
+                    <svg class="social__icon">
+                      <use href="./img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+      
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Twitter link">
+                    <svg class="social__icon">
+                      <use href="./img/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+      
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Facebook link">
+                    <svg class="social__icon">
+                      <use href="./img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+      
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="LinkedIn link">
+                    <svg class="social__icon">
+                      <use href="./img/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-            <ul class="networks__list">
-
-              <li class="network__item">
-                <a class="network__link" href="" aria-label="Instagram link">
-                  <svg class="network__icon">
-                    <use href="./img/sprite.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="network__item">
-                <a class="network__link" href="" aria-label="Twitter link">
-                  <svg class="network__icon">
-                    <use href="./img/sprite.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="network__item">
-                <a class="network__link" href="" aria-label="Facebook link">
-                  <svg class="network__icon">
-                    <use href="./img/sprite.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="network__item">
-                <a class="network__link" href="" aria-label="LinkedIn link">
-                  <svg class="network__icon">
-                    <use href="./img/sprite.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
           </li>
 
           <li class="card__item">
             <div class="card__img">
               <img src="./img/team/person2.png" alt="Фото Марты Стюарт" width="270">
             </div>
-            <h3 class="card__title">Marta Stewart</h3>
-            <p class="card__text">Frontend Developer</p>
-            <ul class="networks__list">
-
-              <li class="network__item">
-                <a class="network__link" href="" aria-label="Instagram link">
-                  <svg class="network__icon">
-                    <use href="./img/sprite.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="network__item">
-                <a class="network__link" href="" aria-label="Twitter link">
-                  <svg class="network__icon">
-                    <use href="./img/sprite.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="network__item">
-                <a class="network__link" href="" aria-label="Facebook link">
-                  <svg class="network__icon">
-                    <use href="./img/sprite.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="network__item">
-                <a class="network__link" href="" aria-label="LinkedIn link">
-                  <svg class="network__icon">
-                    <use href="./img/sprite.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            <div class="card__item-filler">
+              <h3 class="card__title">Marta Stewart</h3>
+              <p class="card__text">Frontend Developer</p>
+              <ul class="social">
+      
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Instagram link">
+                    <svg class="social__icon">
+                      <use href="./img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+      
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Twitter link">
+                    <svg class="social__icon">
+                      <use href="./img/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+      
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Facebook link">
+                    <svg class="social__icon">
+                      <use href="./img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+      
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="LinkedIn link">
+                    <svg class="social__icon">
+                      <use href="./img/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
           </li>
           
           <li class="card__item">
             <div class="card__img">
               <img src="./img/team/person3.png" alt="Фото Роберта Джекиса" width="270">
             </div>
-            <h3 class="card__title">Robert Jakis</h3>
-            <p class="card__text">Marketing</p>
-            <ul class="networks__list">
+            <div class="card__item-filler">
+              <h3 class="card__title">Robert Jakis</h3>
+              <p class="card__text">Marketing</p>
+              <ul class="social">
+      
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Instagram link">
+                    <svg class="social__icon">
+                      <use href="./img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+      
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Twitter link">
+                    <svg class="social__icon">
+                      <use href="./img/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+      
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="Facebook link">
+                    <svg class="social__icon">
+                      <use href="./img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+      
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="LinkedIn link">
+                    <svg class="social__icon">
+                      <use href="./img/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-              <li class="network__item">
-                <a class="network__link" href="" aria-label="Instagram link">
-                  <svg class="network__icon">
-                    <use href="./img/sprite.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="network__item">
-                <a class="network__link" href="" aria-label="Twitter link">
-                  <svg class="network__icon">
-                    <use href="./img/sprite.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="network__item">
-                <a class="network__link" href="" aria-label="Facebook link">
-                  <svg class="network__icon">
-                    <use href="./img/sprite.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="network__item">
-                <a class="network__link" href="" aria-label="LinkedIn link">
-                  <svg class="network__icon">
-                    <use href="./img/sprite.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
           </li>
 
           <li class="card__item">
             <div class="card__img">
               <img src="./img/team/person4.png" alt="Фото Мартина До" width="270">
             </div>
-             <h3 class="card__title">Martin Doe</h3>
-             <p class="card__text">UI Designer</p>
-             <ul class="networks__list">
+            <div class="card__item-filler">
+              <h3 class="card__title">Martin Doe</h3>
+              <p class="card__text">UI Designer</p>
+              <ul class="social">
+     
+               <li class="social__item">
+                 <a class="social__link" href="" aria-label="Instagram link">
+                   <svg class="social__icon">
+                     <use href="./img/sprite.svg#icon-instagram"></use>
+                   </svg>
+                 </a>
+               </li>
+     
+               <li class="social__item">
+                 <a class="social__link" href="" aria-label="Twitter link">
+                   <svg class="social__icon">
+                     <use href="./img/sprite.svg#icon-twitter"></use>
+                   </svg>
+                 </a>
+               </li>
+     
+               <li class="social__item">
+                 <a class="social__link" href="" aria-label="Facebook link">
+                   <svg class="social__icon">
+                     <use href="./img/sprite.svg#icon-facebook"></use>
+                   </svg>
+                 </a>
+               </li>
+     
+               <li class="social__item">
+                 <a class="social__link" href="" aria-label="LinkedIn link">
+                   <svg class="social__icon">
+                     <use href="./img/sprite.svg#icon-linkedin"></use>
+                   </svg>
+                 </a>
+               </li>
+             </ul>
+            </div>
 
-              <li class="network__item">
-                <a class="network__link" href="" aria-label="Instagram link">
-                  <svg class="network__icon">
-                    <use href="./img/sprite.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="network__item">
-                <a class="network__link" href="" aria-label="Twitter link">
-                  <svg class="network__icon">
-                    <use href="./img/sprite.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="network__item">
-                <a class="network__link" href="" aria-label="Facebook link">
-                  <svg class="network__icon">
-                    <use href="./img/sprite.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="network__item">
-                <a class="network__link" href="" aria-label="LinkedIn link">
-                  <svg class="network__icon">
-                    <use href="./img/sprite.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
           </li>
 
         </ul>
@@ -382,81 +399,101 @@
 
   </main>
 
-  <footer class="layout__sect footer">
+  <footer class="footer">
     <div class="container">
 
-      <ul class="footer__list">
+      <ul class="footer__list">  
 
-        <li class="footer__item">
-          <a href="index.html" class="footer__link">
-            <svg class="footer__logo">
-              <use xlink:href="./img/sprite.svg#icon-webstudio-footer"></use>
-            </svg>
-          </a>         
-          <address class="footer__address">
-            <p class="footer__geoposition">г. Киев, пр-т Леси Украинки, 26</p>
-            <a class="footer__link" href="mailto:info@devstudio.com">
-              <span class="contact__link-text">info@devstudio.com</span>
-            </a>
-            <a class="footer__link" href="tel:+380961111111">
-              <span class="contact__link-text">+38 096 111 11 11</span>
-            </a>
-          </address>
+        <li class="footer__list-item"> 
+          <ul class="mix-list">
 
+            <li class="mix-list__item">
+              <a href="index.html" class="mix-list__link">
+                <div class="mix-list__logo">
+                  <img src="./img/webstudio-head.svg" alt="">
+                </div>
+              </a> 
+            </li>
+
+            <li class="mix-list__item">
+              <address class="address">
+                <p class="mix-list__geoposition">г. Киев, пр-т Леси Украинки, 26</p>
+              </address>
+            </li>
+
+            <li class="mix-list__item">
+              <a class="mix-list__link" href="mailto:info@devstudio.com">
+                <span class="mix-list__text">info@devstudio.com</span>
+              </a>
+            </li>
+
+            <li class="mix-list__item">
+              <a class="mix-list__link" href="tel:+380961111111">
+                <span class="mix-list__text">+38 096 111 11 11</span>
+              </a>
+            </li>
+          </ul>
         </li>
 
-        <li class="footer__item">
-          <div class="join">
-            <b class="join__title">присоединяйтесь</b>
+        <li class="footer__list-item">
+          <b class="footer__text">присоединяйтесь</b>
             
-            <ul class="networks__list">
+          <ul class="social social--second">
     
-              <li class="network__item network--bgc">
-                <a class="network__link" href="" aria-label="Instagram link">
-                  <svg class="network__icon">
+              <li class="social__item">
+                <a class="social__link" href="" aria-label="Instagram link">
+                  <svg class="social__icon">
                     <use href="./img/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
     
-              <li class="network__item network--bgc">
-                <a class="network__link" href="" aria-label="Twitter link">
-                  <svg class="network__icon">
+              <li class="social__item">
+                <a class="social__link" href="" aria-label="Twitter link">
+                  <svg class="social__icon">
                     <use href="./img/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
     
-              <li class="network__item network--bgc">
-                <a class="network__link" href="" aria-label="Facebook link">
-                  <svg class="network__icon">
+              <li class="social__item">
+                <a class="social__link" href="" aria-label="Facebook link">
+                  <svg class="social__icon">
                     <use href="./img/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
     
-              <li class="network__item network--bgc">
-                <a class="network__link" href="" aria-label="LinkedIn link">
-                  <svg class="network__icon">
+              <li class="social__item">
+                <a class="social__link" href="" aria-label="LinkedIn link">
+                  <svg class="social__icon">
                     <use href="./img/sprite.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </li>
-            </ul>
-          </div>
+          </ul>
         </li>
 
-        <li class="footer__item footer__input">
-          <b class="footer__input-text">Подпишитесь на рассылку</b>
-          <form class="footer__form">
-            <input type="email" id="email" name="email">
-          </form>
-          <a class="footer__btn-link" href="">
-            <span class="btn-link__text">Заказать услугу</span> 
-            <svg class="btn-link__img is--telegram">
-              <use xlink:href="./img/sprite.svg#icon-iconsend"></use>
-            </svg> 
-          </a>
+        <li class="footer__list-item footer__form">
+
+          <b class="footer__text">Подпишитесь на рассылку</b>
+
+          <ul class="footer__mailing-list">
+            <li class="footer__mailing-item">
+              <form class="footer__form">
+                <input class="form-input" type="email" id="email" name="email">
+              </form>
+            </li>
+      
+            <li class="footer__mailing-item">
+              <a class="btn footer--btn" href="">
+                <p class="btn__link-text">Подписаться</p> 
+                <svg class="btn__link-img is--telegram">
+                  <use xlink:href="./img/sprite.svg#icon-iconsend"></use>
+                </svg> 
+              </a>
+            </li>
+          </ul>
 
         </li>
       </ul>
