@@ -97,23 +97,28 @@ textarea {
   /* margin: 0 -42px; */
 }
 
-.header__item {
+/* .header__item {
   padding: 0 42px;
-}
+} */
 
 .header__item-logo {
   max-width: 237px;
   width: 100%;
 }
 
-.logo {
-  display: block;
+
+.header__logo {
+  width: 153px;
+  height: 31px;
 }
 
 .nav {
   text-decoration: none;
+  text-transform: uppercase;
+
   font-weight: 500;
   font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
 }
@@ -129,6 +134,7 @@ textarea {
 
 .nav__link {
   text-decoration: none;
+  line-height: 1.14px;
   padding: 32px 0;
   position: relative;
 }
@@ -144,6 +150,10 @@ textarea {
 }
 
 /* ............................ */
+.header__contacts {
+  margin-left: auto;
+}
+
 .contacts__list {
   display: flex;
   align-items: center;
@@ -182,30 +192,30 @@ textarea {
 }
 
 /* ................................. */
-/* .overlay {
+.overlay {
   padding: 0 0;
   height: 600px;
-  margin-left: auto;
-  margin-right: auto;
 
   background-image: linear-gradient(
     to right,
     rgba(47, 48, 58, 0.8), 
     rgba(47, 48, 58, 0.8)),
-    url(../img/Header-compress.jpg);
+    url(../img/header-compress.jpg);
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-} */
+}
 
 .hero {
   text-align: center;
 }
 
 .hero__content {
-  background-color: teal;
-  /* Что бы сюда положить */
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero__title{
@@ -369,9 +379,10 @@ textarea {
 
 .block__list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
+
 
 .block__item {
   width: 170px;
@@ -381,27 +392,35 @@ textarea {
   border-radius: 4px;
 }
 
-.block__icon is--first {
+.block__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 90px;
+}
+
+.block__icon.is--first {
   width: 44px;
   height: 49px;
 }
-.block__icon is--second {
+.block__icon.is--second {
   width: 40px;
   height: 52px;
 }
-.block__icon is--third {
+.block__icon.is--third {
   width: 41px;
   height: 42px;
 }
-.block__icon is--fourth {
+.block__icon.is--fourth {
   width: 79px;
   height: 42px;
 }
-.block__icon is--fifth {
+.block__icon.is--fifth {
   width: 59px;
   height: 47px;
 }
-.block__icon is--sixth {
+.block__icon.is--sixth {
   width: 88px;
   height: 45px;
 }
@@ -410,4 +429,82 @@ textarea {
 .block__link:focus {
   border: 1px solid #2196F3;
   --color4:#2196F3;
+}
+
+/* ........................... */
+.footer {
+  background-color: #2F303A;
+}
+
+.footer__list {
+  display: flex;
+}
+
+.footer__link {
+  margin-top: 9px;
+  display: flex;
+  text-decoration: none;
+}
+
+.footer__logo {
+  margin-top: 60px;
+  width: 153px;
+  height: 31px;
+}
+
+.footer__address {
+  line-height: 1.7em;
+  margin-right: 69px;
+}
+
+.footer__geoposition{
+  margin-top: 20px;
+  color: #FFFFFF;
+  }
+  
+
+.footer__input{
+  margin-top: 72px;
+}
+
+.footer__input-text {
+  margin-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer__btn-link{
+  display: flex;
+  text-decoration: none;
+
+  border-radius: 4px;
+  background-color: #2196F3;
+  font-weight: bold;
+  line-height: 1.8;
+
+}
+
+.btn-link__text {
+  padding: 10px 10px;
+  color: #FFFFFF;
+}
+
+.btn-link__img.is--telegram {
+   width: 44px;
+   height: 44px;
+}
+
+.join {
+  margin-top: 72px;
+  margin-right: 94px;
+}
+
+.join__title {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.network__item.network--bgc {
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
 }

@@ -16,13 +16,13 @@
     <div class="container">
       <ul class="header__items">
         <li class="header__item header__item-logo">
-          <a href="" class="logo">
-            <!-- <svg>
-              <use xlink:href="./img/sprite.svg#icon-webstudio-footer" width="153" height="31"></use>
-            </svg>  -->
+          <a href="" class="header__link">
+            <svg class="header__logo">
+              <use xlink:href="./img/sprite.svg#icon-webstudio-head"></use>
+            </svg> 
           </a> 
         </li>
-        <li class="header__item header__item-nav">
+        <li class="header__item ">
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
@@ -37,7 +37,7 @@
             </ul>
           </nav>
         </li>
-        <li class="header__item">
+        <li class="header__item header__contacts">
           <ul class="contacts__list">
             <li class="contact__item">
               <a class="contact__link" href="mailto:info@devstudio.com">
@@ -330,8 +330,8 @@
 
           <li class="block__item">
             <a class="block__link" href="">
-              <svg class="block__icon is--first">
-                <use href="./img/sprite.svg#icon-logo1"></use>
+              <svg class="block__icon is--first" >
+                <use xlink:href="./img/sprite.svg#icon-logo1"></use>
               </svg>
             </a>
           </li>  
@@ -339,7 +339,7 @@
           <li class="block__item">
             <a class="block__link" href="">
               <svg class="block__icon is--second">
-                <use href="./img/sprite.svg#icon-logo2"></use>
+                <use xlink:href="./img/sprite.svg#icon-logo2"></use>
               </svg>
             </a>
           </li>
@@ -347,7 +347,7 @@
           <li class="block__item">
             <a class="block__link" href="">
               <svg class="block__icon is--third">
-                <use href="./img/sprite.svg#icon-logo3"></use>
+                <use xlink:href="./img/sprite.svg#icon-logo3"></use>
               </svg>
             </a>
           </li>
@@ -355,7 +355,7 @@
           <li class="block__item">
             <a class="block__link" href="">
               <svg class="block__icon is--fourth">
-                <use href="./img/sprite.svg#icon-logo4"></use>
+                <use xlink:href="./img/sprite.svg#icon-logo4"></use>
               </svg>
             </a>
           </li>
@@ -363,7 +363,7 @@
           <li class="block__item">
             <a class="block__link" href="">
               <svg class="block__icon is--fifth">
-                <use href="./img/sprite.svg#icon-logo5"></use>
+                <use xlink:href="./img/sprite.svg#icon-logo5"></use>
               </svg>
             </a>
           </li>
@@ -371,7 +371,7 @@
           <li class="block__item">
             <a class="block__link" href="">
               <svg class="block__icon is--sixth">
-                <use href="./img/sprite.svg#icon-logo6"></use>
+                <use xlink:href="./img/sprite.svg#icon-logo6"></use>
               </svg>
             </a>
           </li>
@@ -388,31 +388,21 @@
       <ul class="footer__list">
 
         <li class="footer__item">
-            <svg class="logo">
-              <use></use>
-            </svg>            
-            <address class="footer__geoposition">
-              <p class="">г. Киев, пр-т Леси Украинки, 26</p>
-            </address>
+          <a href="index.html" class="footer__link">
+            <svg class="footer__logo">
+              <use xlink:href="./img/sprite.svg#icon-webstudio-footer"></use>
+            </svg>
+          </a>         
+          <address class="footer__address">
+            <p class="footer__geoposition">г. Киев, пр-т Леси Украинки, 26</p>
+            <a class="footer__link" href="mailto:info@devstudio.com">
+              <span class="contact__link-text">info@devstudio.com</span>
+            </a>
+            <a class="footer__link" href="tel:+380961111111">
+              <span class="contact__link-text">+38 096 111 11 11</span>
+            </a>
+          </address>
 
-          <ul class="contacts__list">
-              <li class="contact__item">
-                <a class="contact__link" href="mailto:info@devstudio.com">
-                  <svg class="contact__icon-mail">
-                    <use xlink:href="./img/sprite.svg#icon-logo-email"></use>
-                  </svg>
-                  <span class="contact__link-text">info@devstudio.com</span> 
-                </a>
-              </li>
-              <li class="contact__item">
-                <a class="contact__link" href="tel:+380961111111">
-                  <svg class="contact__icon-tel">
-                    <use xlink:href="./img/sprite.svg#icon-logo-tel"></use>
-                  </svg>
-                  <span class="contact__link-text">+38 096 111 11 11</span>
-                </a>
-              </li>
-            </ul>
         </li>
 
         <li class="footer__item">
@@ -421,7 +411,7 @@
             
             <ul class="networks__list">
     
-              <li class="network__item footer__networks--bgc">
+              <li class="network__item network--bgc">
                 <a class="network__link" href="" aria-label="Instagram link">
                   <svg class="network__icon">
                     <use href="./img/sprite.svg#icon-instagram"></use>
@@ -429,7 +419,7 @@
                 </a>
               </li>
     
-              <li class="network__item footer__networks--bgc">
+              <li class="network__item network--bgc">
                 <a class="network__link" href="" aria-label="Twitter link">
                   <svg class="network__icon">
                     <use href="./img/sprite.svg#icon-twitter"></use>
@@ -437,7 +427,7 @@
                 </a>
               </li>
     
-              <li class="network__item footer__networks--bgc">
+              <li class="network__item network--bgc">
                 <a class="network__link" href="" aria-label="Facebook link">
                   <svg class="network__icon">
                     <use href="./img/sprite.svg#icon-facebook"></use>
@@ -445,7 +435,7 @@
                 </a>
               </li>
     
-              <li class="network__item footer__networks--bgc">
+              <li class="network__item network--bgc">
                 <a class="network__link" href="" aria-label="LinkedIn link">
                   <svg class="network__icon">
                     <use href="./img/sprite.svg#icon-linkedin"></use>
@@ -456,16 +446,17 @@
           </div>
         </li>
 
-        <li class="footer__item footer_input">
+        <li class="footer__item footer__input">
+          <b class="footer__input-text">Подпишитесь на рассылку</b>
           <form class="footer__form">
             <input type="email" id="email" name="email">
           </form>
-          <button class="btn btn__btn--footer">
-            <span class="btn__title"> Подписаться </span>
-            <svg class="btn__icon">
-              <use href=""></use>
-            </svg>
-          </button>
+          <a class="footer__btn-link" href="">
+            <span class="btn-link__text">Заказать услугу</span> 
+            <svg class="btn-link__img is--telegram">
+              <use xlink:href="./img/sprite.svg#icon-iconsend"></use>
+            </svg> 
+          </a>
 
         </li>
       </ul>
