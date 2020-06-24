@@ -181,7 +181,7 @@ img {
   text-decoration: none;
 }
 
-.nav__link_current {
+.nav__link--current {
   color: var(--accent-color)
 }
 

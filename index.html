@@ -7,22 +7,26 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Web Studio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/common.css">
 </head>
 <body>
 
   <header class="header">
     <div class="container">
       <ul class="header__items">
-        <li class="header__item">
-          <a class="logo" href="./index.html"> <span class="logo__logo--part">Web </span>Studio</a>
+        <li class="header__item header__item-logo">
+          <a href="" class="logo">
+            <!-- <svg>
+              <use xlink:href="./img/sprite.svg#icon-webstudio-footer" width="153" height="31"></use>
+            </svg>  -->
+          </a> 
         </li>
         <li class="header__item header__item-nav">
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="" class="nav__link nav__link--current">Студия</a>
+                <a href="" class="nav__link is--current">Студия</a>
               </li>
               <li class="nav__item">
                 <a href="" class="nav__link">Портфолио</a>
@@ -35,20 +39,20 @@
         </li>
         <li class="header__item">
           <ul class="contacts__list">
-            <li class="contacts__item">
-              <a class="contacts__link contacts__accent--link" href="mailto:info@devstudio.com">
-                <svg class="contacts__icon--mail">
+            <li class="contact__item">
+              <a class="contact__link" href="mailto:info@devstudio.com">
+                <svg class="contact__link-icon is--mail" >
                   <use xlink:href="./img/sprite.svg#icon-logo-email"></use>
                 </svg>
-                <span class="contacts__link--text">info@devstudio.com</span> 
+                <span class="contact__link-text">info@devstudio.com</span> 
               </a>
             </li>
-            <li class="contacts__item">
-              <a class="contacts__link contacts__accent--link" href="tel:+380961111111">
-                <svg class="contacts__icon--tel">
+            <li class="contact__item">
+              <a class="contact__link" href="tel:+380961111111">
+                <svg class="contact__link-icon is--tel">
                   <use xlink:href="./img/sprite.svg#icon-logo-tel"></use>
                 </svg>
-                <span class="contacts__link--text">+38 096 111 11 11</span>
+                <span class="contact__link-text">+38 096 111 11 11</span>
               </a>
             </li>
           </ul>
@@ -63,7 +67,7 @@
       <div class="container hero">
         <div class="hero__content">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <a class="btn btn__btn--hero" href="">Заказать услугу</a>
+          <a class="btn" href="">Заказать услугу</a>
         </div>
       </div>
     </section>
@@ -73,36 +77,36 @@
 
         <ul class="box__list">
 
-           <li class="box__item box__item--mg"> 
-             <svg class="box__icon box__icon--md">
+           <li class="box__item"> 
+             <svg class="box__icon">
                <use href="./img/sprite.svg#icon-antenna"></use>
              </svg>
-            <p class="box__title box__title--black">Внимание к деталям</p>
-            <p class="box__text box__text--s">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+            <p class="box__title">Внимание к деталям</p>
+            <p class="box__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
           </li>
 
-           <li class="box__item box__item--mg">
-            <svg class="box__icon box__icon--md">
+           <li class="box__item">
+            <svg class="box__icon">
               <use href="./img/sprite.svg#icon-clock"></use>
             </svg>
-            <p class="box__title box__title--black">Пунктуальность</p>
-            <p class="box__text box__text--s">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+            <p class="box__title">Пунктуальность</p>
+            <p class="box__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
            </li>
 
-           <li class="box__item box__item--mg">
-            <svg class="box__icon box__icon--md">
+           <li class="box__item">
+            <svg class="box__icon">
               <use href="./img/sprite.svg#icon-diagram"></use>
             </svg>
-            <p class="box__title box__title--black">Планирование</p>
-             <p class="box__text box__text--s">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+            <p class="box__title">Планирование</p>
+             <p class="box__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
            </li>
 
-           <li class="box__item box__item--mg">
-            <svg class="box__icon box__icon--md">
+           <li class="box__item">
+            <svg class="box__icon">
               <use href="./img/sprite.svg#icon-astronaut"></use>
             </svg>
-             <p class="box__title box__title--black">Современные технологии</p>
-             <p class="box__text box__text--s">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+             <p class="box__title">Современные технологии</p>
+             <p class="box__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
            </li>
         </ul>
       </div>
@@ -110,29 +114,29 @@
 
     <section class="layout__sect">
       <div class="container">
-        <h2 class="sect__title">Чем мы занимаемся</h2>
+        <h2 class="layout__sect-title">Чем мы занимаемся</h2>
   
-        <ul class="box__list list_info">
+        <ul class="cases__list">
 
-          <li class="box__item">
-            <div class="box__img box__img--lg">
+          <li class="case__item">
+            <div class="case__img">
               <img src="./img/deskapp.png" alt="Фотография компьютера" width="370">
             </div>
-            <h3 class="box__title box__title--white">Десктопные приложения</h3>
+            <h3 class="case__title">Десктопные приложения</h3>
           </li>
      
-          <li class="box__item">
-            <div class="box__img box__img--lg">
+          <li class="case__item">
+            <div class="case__img">
               <img src="./img/mobapp.png" alt="Фотография телефона" width="370">
             </div>
-            <h3 class="box__title box__title--white">Мобильные приложения</h3>
+            <h3 class="case__title">Мобильные приложения</h3>
           </li>
      
-          <li class="box__item">
-            <div class="box__img box__img--lg">
+          <li class="case__item">
+            <div class="case__img">
               <img src="./img/designer.png" alt="Фотография монитора" width="370">
             </div>
-            <h3 class="box__title box__title--white">Дизайнерские решения</h3>
+            <h3 class="case__title">Дизайнерские решения</h3>
          </li>
         </ul>
       </div>
@@ -141,16 +145,16 @@
     <section class="layout__sect cards">
       <div class="container">
 
-        <h2 class="sect__title">Наша команда</h2>
+        <h2 class="layout__sect-title">Наша команда</h2>
    
-        <ul class="box__list">
+        <ul class="cards__list">
 
-          <li class="box__item box__card--bgc">
-            <div class="box__img box__card--img">
-              <img src="./img/team/person1.png" alt="Фото Джона Смита" width="270">
+          <li class="card__item">
+            <div class="card__img">
+              <img src="./img/team/person1.png" alt="Фото Джона Смита">
             </div>
-            <h3 class="box__title box__title--bold">John Smith</h3>
-            <p class="box__text box__title--normal">Product Designer</p>
+            <h3 class="card__title">John Smith</h3>
+            <p class="card__text">Product Designer</p>
 
             <ul class="networks__list">
 
@@ -188,12 +192,12 @@
             </ul>
           </li>
 
-          <li class="box__item box__card--bgc">
-            <div class="box__img box__card--img">
+          <li class="card__item">
+            <div class="card__img">
               <img src="./img/team/person2.png" alt="Фото Марты Стюарт" width="270">
             </div>
-            <h3 class="box__title box__title--bold">Marta Stewart</h3>
-            <p class="box__text box__title--normal">Frontend Developer</p>
+            <h3 class="card__title">Marta Stewart</h3>
+            <p class="card__text">Frontend Developer</p>
             <ul class="networks__list">
 
               <li class="network__item">
@@ -230,12 +234,12 @@
             </ul>
           </li>
           
-          <li class="box__item box__card--bgc">
-            <div class="box__img box__card--img">
+          <li class="card__item">
+            <div class="card__img">
               <img src="./img/team/person3.png" alt="Фото Роберта Джекиса" width="270">
             </div>
-            <h3 class="box__title box__title--bold">Robert Jakis</h3>
-            <p class="box__text box__title--normal">Marketing</p>
+            <h3 class="card__title">Robert Jakis</h3>
+            <p class="card__text">Marketing</p>
             <ul class="networks__list">
 
               <li class="network__item">
@@ -272,12 +276,12 @@
             </ul>
           </li>
 
-          <li class="box__item box__card--bgc">
-            <div class="box__img box__card--img">
+          <li class="card__item">
+            <div class="card__img">
               <img src="./img/team/person4.png" alt="Фото Мартина До" width="270">
             </div>
-             <h3 class="box__title box__title--bold">Martin Doe</h3>
-             <p class="box__text box__title--normal">UI Designer</p>
+             <h3 class="card__title">Martin Doe</h3>
+             <p class="card__text">UI Designer</p>
              <ul class="networks__list">
 
               <li class="network__item">
@@ -320,53 +324,54 @@
 
     <section class="layout__sect">
       <div class="container">
-        <h2 class="sect__title">Постоянные клиенты</h2>
-        <ul class="box__list">
+        <h2 class="layout__sect-title">Постоянные клиенты</h2>
 
-          <li class="box__item">
-            <a class="box__link box__accent--link" href="">
-              <svg class="box__icon">
-                <use href="./img/sprite.svg#icon-logo-1"></use>
+        <ul class="block__list">
+
+          <li class="block__item">
+            <a class="block__link" href="">
+              <svg class="block__icon is--first">
+                <use href="./img/sprite.svg#icon-logo1"></use>
               </svg>
             </a>
           </li>  
 
-          <li class="box__item">
-            <a class="box__link box__accent--link" href="">
-              <svg class="box__icon">
-                <use href="./img/sprite.svg#icon-logo-2"></use>
+          <li class="block__item">
+            <a class="block__link" href="">
+              <svg class="block__icon is--second">
+                <use href="./img/sprite.svg#icon-logo2"></use>
               </svg>
             </a>
           </li>
 
-          <li class="box__item">
-            <a class="box__link box__accent--link" href="">
-              <svg class="box__icon">
-                <use href="./img/sprite.svg#icon-logo-3"></use>
+          <li class="block__item">
+            <a class="block__link" href="">
+              <svg class="block__icon is--third">
+                <use href="./img/sprite.svg#icon-logo3"></use>
               </svg>
             </a>
           </li>
 
-          <li class="box__item">
-            <a class="box__link box__accent--link" href="">
-              <svg class="box__icon">
-                <use href="./img/sprite.svg#icon-logo-4"></use>
+          <li class="block__item">
+            <a class="block__link" href="">
+              <svg class="block__icon is--fourth">
+                <use href="./img/sprite.svg#icon-logo4"></use>
               </svg>
             </a>
           </li>
 
-          <li class="box__item">
-            <a class="box__link box__accent--link" href="">
-              <svg class="box__icon">
-                <use href="./img/sprite.svg#icon-logo-5"></use>
+          <li class="block__item">
+            <a class="block__link" href="">
+              <svg class="block__icon is--fifth">
+                <use href="./img/sprite.svg#icon-logo5"></use>
               </svg>
             </a>
           </li>
 
-          <li class="box__item">
-            <a class="box__link box__accent--link" href="">
-              <svg class="box__icon">
-                <use href="./img/sprite.svg#icon-logo-6"></use>
+          <li class="block__item">
+            <a class="block__link" href="">
+              <svg class="block__icon is--sixth">
+                <use href="./img/sprite.svg#icon-logo6"></use>
               </svg>
             </a>
           </li>
@@ -383,28 +388,28 @@
       <ul class="footer__list">
 
         <li class="footer__item">
-
-            <a class="logo footer__logo--white" href="./index.html"> <span class="logo__logo--part">Web </span>Studio</a>
-            
+            <svg class="logo">
+              <use></use>
+            </svg>            
             <address class="footer__geoposition">
               <p class="">г. Киев, пр-т Леси Украинки, 26</p>
             </address>
 
-          <ul class="contacts__list contacts__list--footer">
-              <li class="contacts__item">
-                <a class="contacts__link contacts__accent--link" href="mailto:info@devstudio.com">
-                  <svg class="contacts__icon--mail">
+          <ul class="contacts__list">
+              <li class="contact__item">
+                <a class="contact__link" href="mailto:info@devstudio.com">
+                  <svg class="contact__icon-mail">
                     <use xlink:href="./img/sprite.svg#icon-logo-email"></use>
                   </svg>
-                  <span class="contacts__link--text">info@devstudio.com</span> 
+                  <span class="contact__link-text">info@devstudio.com</span> 
                 </a>
               </li>
-              <li class="contacts__item">
-                <a class="contacts__link contacts__accent--link" href="tel:+380961111111">
-                  <svg class="contacts__icon--tel">
+              <li class="contact__item">
+                <a class="contact__link" href="tel:+380961111111">
+                  <svg class="contact__icon-tel">
                     <use xlink:href="./img/sprite.svg#icon-logo-tel"></use>
                   </svg>
-                  <span class="contacts__link--text">+38 096 111 11 11</span>
+                  <span class="contact__link-text">+38 096 111 11 11</span>
                 </a>
               </li>
             </ul>
