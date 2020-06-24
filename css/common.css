@@ -62,7 +62,7 @@ textarea {
 }
 
 .container {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 
   max-width: 1200px;
   width: 100%;
