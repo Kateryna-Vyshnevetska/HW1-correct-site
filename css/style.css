@@ -152,6 +152,7 @@ textarea {
   position: absolute;
   border-bottom: 4px solid #2196F3;
   border-radius: 2px;
+  
 }
 
 /* ............................ */
@@ -184,7 +185,6 @@ textarea {
 }
 
 .contact__link-icon {
-
   margin-right: 10px;
   fill: #757575;
 }
@@ -254,38 +254,61 @@ textarea {
 }
 
 /* ............................ */
-.box__list {
+.box-list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  margin: -15px -15px;
 }
 
-.box__item {
-  font-size: 14px;
-}
-
-.box__item +.box__item {
-  margin-left: 30px;
-}
-
-.box__icon {
-  background: #F5F4FA;
-  border-radius: 4px;
-
-  padding: 25px 100px;
+.box-list__item {
+  margin: 15px 15px;
   width: 270px;
-  height: 120px;
 }
 
-.box__title {
+.box-list__item-bgc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+
+  background-color: #F5F4FA;
+  border-radius: 4px;
+}
+
+.box-list__icon {
+  width: 70px;
+  height: 70px;
+}
+
+/* .box-list__item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+} */
+
+/* .icon--size {
+  width: 70px;
+  height: 70px;
+} */
+
+.box-list__container {
   margin-top: 30px;
+}
+
+.box-list__title {
   margin-bottom: 10px;
 
+  font-size: 14px;
   color: #212121;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.box__text {
+.box-list__text {
+  font-size: 14px;
   line-height: 1.7;
 }
 
@@ -310,8 +333,7 @@ textarea {
 }
 
 .case__img {
-  display: block;
-  max-width: 100%;
+  position: relative;
 }
 
 .case__title {
@@ -360,8 +382,7 @@ textarea {
 }
 
 .card__img{
-  display: block;
-  max-width: 100%;
+  position: relative;
 }
 
 .card__title {
@@ -378,7 +399,7 @@ textarea {
 
 .social {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin: 0 -5px;
 }
 
@@ -410,12 +431,14 @@ textarea {
 
 .block__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  margin: -15px -15px ;
 }
 
 
 .block__item {
+  margin: 15px 15px;
   width: 170px;
   height: 90px;
 
@@ -579,10 +602,6 @@ textarea {
 
 .btn.tab-list--btn {
   background-color: #F5F4FA;
-  display: block;
-}
-
-.tab-list__btn-text {
   font-weight: 500;
   line-height: 1.6em;
   letter-spacing: 0.03em;
@@ -591,8 +610,13 @@ textarea {
 
 .tab-list--btn:hover,
 .tab-list--btn:focus {
-  background-color: #2196F3;
   color:#fff;
+  background-color: #2196F3;
+}
+
+.btn.is-current {
+  color:#fff;
+  background-color: #2196F3;
 }
 
 .benefits__list {
@@ -603,8 +627,8 @@ textarea {
 
 .benefit__item {
   margin: 15px 15px;
-  width: calc((100% - 90px) / 3);
-  /* max-width: 370px; */
+  /* width: calc((100% - 90px) / 3); */
+  max-width: 370px;
 
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
@@ -614,7 +638,7 @@ textarea {
 }
 
 .benefit__img {
-
+  position: relative;
 }
 
 .benefit__content {
