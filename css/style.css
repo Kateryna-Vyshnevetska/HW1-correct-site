@@ -178,15 +178,14 @@ textarea {
   fill: #757575;
 }
 
-/* ПОНЯТЬ почему иконка маленькая */
 .contact__link-icon.is--mail {
-  width: 16px;
-  height: 11px;
+  width: 15px;
+  height: 15px;
 }
 
 .contact__link-icon.is--tel {
-  width: 10px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
 }
 
 .contact__link-text {
@@ -541,4 +540,21 @@ textarea {
 .social--second .social__item:hover,
 .social--second .social__item:focus {
   background-color: #2196F3;
+}
+
+
+
+
+
+.tabs-list {
+  display: flex;
+  align-items: center;
+}
+
+.tab-list__item {
+
+}
+
+.tab-list__link {
+  text-decoration: none;
 }
