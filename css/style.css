@@ -62,7 +62,7 @@ textarea {
 }
 
 .container {
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 
   max-width: 1200px;
   width: 100%;
@@ -71,7 +71,7 @@ textarea {
 }
 
 .layout__sect {
-  /* outline: 1px solid black; */
+  outline: 1px solid black;
 
   width: 1600px;
   padding-top: 94px;
@@ -94,12 +94,12 @@ textarea {
 .header__items {
   display: flex;
   align-items: center;
-  /* margin: 0 -42px; */
+  margin: 0 -42px;
 }
 
-/* .header__item {
+.header__item {
   padding: 0 42px;
-} */
+}
 
 .header__item-logo {
   max-width: 237px;
@@ -125,11 +125,11 @@ textarea {
 
 .nav__list {
   display: flex;
-  margin: 0 -25px;
+  margin: 0 -32px;
 }
 
 .nav__item {
-  padding: 0 25px;
+  padding: 0 32px;
 }
 
 .nav__link {
