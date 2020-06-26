@@ -91,6 +91,10 @@ textarea {
 }
 /* ................................. */
 
+.header {
+  border: 1px solid #ECECEC;
+}
+
 .header__items {
   display: flex;
   align-items: center;
@@ -114,8 +118,6 @@ textarea {
 
 .nav {
   text-decoration: none;
-  text-transform: uppercase;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -215,7 +217,7 @@ textarea {
     url(../img/header-compress.jpg);
 
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
 }
 
@@ -266,33 +268,37 @@ textarea {
   width: 270px;
 }
 
-.box-list__item-bgc {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 120px;
 
-  background-color: #F5F4FA;
-  border-radius: 4px;
+.box-list__icon--antenna:before {
+  content: "";
+  background-image: url(../img/antenna.svg);
 }
 
-.box-list__icon {
-  width: 70px;
-  height: 70px;
+.box-list__icon--diagram:before {
+  content: "";
+  background-image: url(../img/diagram.svg);
 }
 
-/* .box-list__item::before {
+.box-list__icon--clock:before {
+  content: "";
+  background-image: url(../img/clock.svg);
+}
+
+.box-list__icon--astronaut:before {
+  content: "";
+  background-image: url(../img/astronaut.svg);
+}
+
+.box-list__icon::before {
   content: "";
   display: block;
   height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+
   background-color: #F5F4FA;
   border-radius: 4px;
-} */
-
-/* .icon--size {
-  width: 70px;
-  height: 70px;
-} */
+}
 
 .box-list__container {
   margin-top: 30px;
@@ -479,8 +485,8 @@ textarea {
   height: 45px;
 }
 
-.block__link:hover,
-.block__link:focus {
+.block__item:hover,
+.block__item:focus {
   border: 1px solid #2196F3;
   --color4:#2196F3;
 }
@@ -611,6 +617,9 @@ textarea {
 .tab-list--btn:hover,
 .tab-list--btn:focus {
   color:#fff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 3px 1px rgba(0, 0, 0, 0.1);
   background-color: #2196F3;
 }
 
@@ -629,12 +638,6 @@ textarea {
   margin: 15px 15px;
   /* width: calc((100% - 90px) / 3); */
   max-width: 370px;
-
-  border: 1px solid #EEEEEE;
-  box-sizing: border-box;
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 
-  0px 4px 4px rgba(0, 0, 0, 0.06), 
-  0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .benefit__img {
@@ -659,4 +662,14 @@ textarea {
 
 .benefit__text {
   display: none;
+}
+
+.benefit__item:hover,
+.benefit__item:focus {
+  display:block;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 
+  0px 4px 4px rgba(0, 0, 0, 0.06), 
+  0px 1px 1px rgba(0, 0, 0, 0.12);
 }
