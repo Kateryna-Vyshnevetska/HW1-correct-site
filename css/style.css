@@ -135,10 +135,13 @@ textarea {
 }
 
 .nav__link {
+  position: relative;
+
   text-decoration: none;
   line-height: 1.14px;
   padding: 32px 0;
-  position: relative;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav__link:hover,
@@ -178,6 +181,9 @@ textarea {
   display: flex;
   align-items: center;
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  --color6 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact__link:hover,
@@ -320,33 +326,29 @@ textarea {
 
 /* ............................... */
 
-.cases__list {
+.case-list {
   display: flex;
+  margin: -15px;
   flex-wrap: wrap;
 }
 
-.case__item {
-  /* ПРОЧИТАТЬ */
-  position: relative;
-}
-
-.cases__list {
-  margin: -15px;
-}
-
-.case__item {
+.case-list__item {
   padding: 15px;
 }
 
-.case__img {
+.case-list__img {
+  position: relative;
   width: 100%;
   object-fit: cover;
 }
 
-.case__title {
+.case-list__title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
   text-align: center;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  padding: 27px 0;
   width: 100%;
 
   font-weight: 700;
@@ -361,11 +363,11 @@ textarea {
   background-color: #F5F4FA;
 }
 
-.card__item-filler {
+.card-list__item-filler {
   padding: 30px 32px 24px 32px;
 }
 
-.cards__list {
+.cards-list {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -376,7 +378,7 @@ textarea {
   margin-left: 30px;
 } */
 
-.card__item {
+.card-list__item {
   margin: 15px 15px;
   max-width: 270px;
   text-align: center;
@@ -386,19 +388,19 @@ textarea {
   border-radius: 4px;
 }
 
-.card__img{
+.card-list__img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.card__title {
+.card-list__title {
   margin-bottom: 10px;
   font-weight: 700;
 
 }
 
-.card__text {
+.card-list__text {
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -412,6 +414,11 @@ textarea {
 
 .social__item{
   margin: 0 5px;
+
+  transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  --color4 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .social__item:hover,
@@ -451,13 +458,15 @@ textarea {
 
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  --color4 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .block__link {
   display: flex;
   justify-content: center;
   align-items: center;
-
   height: 90px;
 }
 
@@ -500,6 +509,12 @@ textarea {
 .social--second .social__item {
   border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social--second .social__item:hover,
+.social--second .social__item:focus {
+  background-color: #2196F3;
 }
 
 .footer__list {
@@ -508,6 +523,7 @@ textarea {
 }
 
 .footer__list-item {
+  margin-left: auto;
   padding: 60px 34px;
 }
 
@@ -585,11 +601,6 @@ textarea {
   line-height: 1.8em;
 }
 
-.social--second .social__item:hover,
-.social--second .social__item:focus {
-  background-color: #2196F3;
-}
-
 
 
 
@@ -613,6 +624,9 @@ textarea {
   line-height: 1.6em;
   letter-spacing: 0.03em;
   color: #212121;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tab-list--btn:hover,
@@ -629,45 +643,70 @@ textarea {
   background-color: #2196F3;
 }
 
-.benefits__list {
+.collection-list {
   display: flex;
   flex-wrap: wrap;
   margin: -15px -15px;
 }
 
-.benefit__item {
+.collection-list__item {
   border: 1px solid #EEEEEE;
   margin: 15px 15px;
   /* width: calc((100% - 90px) / 3); */
   max-width: 370px;
 }
 
-.benefit__img {
+.collection-list__img {
   position: relative;
+  overflow: hidden;
 }
 
-.benefit__content {
+.collection-list__img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.collection-list__item:hover .collection-list__img-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.collection-list__text {
+  position: absolute;
+  top: 63px;
+  left: 24px;
+
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #fff;
+}
+
+.collection-list__content {
   padding: 20px 24px;
 }
 
-.benefit__title {
+.collection-list__title {
   font-size: 18px;
   margin-bottom: 4px;
   line-height: 2em;
   letter-spacing: 0.06em;
 }
 
-.benefit__dscr {
+.collection-list__dscr {
   line-height: 1.8em;
   letter-spacing: 0.03em;
 }
 
-.benefit__text {
-  display: none;
-}
-
-.benefit__item:hover,
-.benefit__item:focus {
+.collection-list__item:hover,
+.collection-list__item:focus {
   display:block;
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
