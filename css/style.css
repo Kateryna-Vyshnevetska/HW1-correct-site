@@ -8,6 +8,10 @@ body {
   height: 100%;
 }
 
+body {
+  padding-top:  66.967px;
+}
+
 *,
 *::before,
 *::after {
@@ -62,7 +66,7 @@ textarea {
 }
 
 .container {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 
   max-width: 1200px;
   width: 100%;
@@ -71,7 +75,7 @@ textarea {
 }
 
 .layout__sect {
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
 
   width: 1600px;
   padding-top: 94px;
@@ -93,9 +97,11 @@ textarea {
 
 .header {
   border: 1px solid #ECECEC;
-  position: absolute;
+  top: 0;
+  position: fixed;
   width: 100%;
   background-color: #fff;
+  z-index: 2;
 }
 
 .header__items {
