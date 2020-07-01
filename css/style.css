@@ -756,7 +756,6 @@ textarea {
 }
 
 .backdrop {
-  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -769,6 +768,7 @@ textarea {
 }
 
 .backdrop-row {
+  display: flex;
   position: absolute;
   left: 0;
   right: 0;
@@ -780,12 +780,12 @@ textarea {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.5s linear 2s;
+  transition: all 0.5s linear 0.3s;
 }
 
 .backdrop--hidden .modal{
-  transition: transform 1000ms linear 0.8s;
-  transform: translateX(-150%);
+  transition: transform 1000ms linear 0.2s;
+  transform: translateX(-200%);
 }
 
 .modal {
@@ -799,13 +799,14 @@ textarea {
 
   background: #fff;
 
-  transition: transform 1000ms linear 0.4s;
+  transition: transform 1000ms linear 0.2s;
   transform: translateX(0);
 
 }
 
 .form-btn__close {
   position: absolute;
+  cursor: pointer;
   top: 8px;
   right: 8px;
   width: 30px;
@@ -856,6 +857,7 @@ input:invalid {
   height: 40px;
   padding: 12px 42px;
 
+  cursor: pointer;
   border-radius: 4px;
   background-color: #fff;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -908,6 +910,7 @@ input:invalid {
 
 .form-area__comment {
   resize: none;
+  cursor: pointer;
   width: 100%;
   height: 120px;
   padding: 12px 16px;
@@ -942,6 +945,33 @@ input:invalid {
   margin-bottom: 28px;
 }
 
+.form-policy__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.form-policy__checkbox+.form-policy__txt {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.form-policy__checkbox+.form-policy__txt::before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/check.svg");
+}
+
+.form-policy__checkbox:checked+.form-policy__txt::before {
+  background-image: url("../img/check-on.svg");
+}
+
 .form-policy__txt {
   font-size: 14px;
   line-height: 1.7;
@@ -951,6 +981,7 @@ input:invalid {
 }
 
 .form-policy__link {
+  padding-left: 5px;
   color:#2196F3;
 }
 
@@ -961,6 +992,7 @@ input:invalid {
 
   padding: 10px 55px;
 
+  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87em;
