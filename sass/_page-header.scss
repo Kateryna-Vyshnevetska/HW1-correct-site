@@ -1,0 +1,24 @@
+.header {
+  border: 1px solid #ECECEC;
+  width: 100%;
+  background-color: $primary-white-color;
+
+  &__items {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo{
+    width: 153px;
+    height: 31px;
+  }
+
+  &__item-logo {
+    max-width: 237px;
+    width: 100%;
+  }
+
+  &__contacts {
+    margin-left: auto;
+  }
+}

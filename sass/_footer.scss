@@ -1,0 +1,102 @@
+.footer {
+  background-color: $bgc-footer;
+
+  &__mailing-list {
+    margin-top: 20px;
+    display: flex;
+    padding-left: -10px;
+  }
+}
+
+.footer-list {
+  display: flex;
+
+  &__item {
+    margin-left: auto;
+    padding: 60px 34px;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14em;
+
+    display: inline-block;
+  
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}
+
+.social.social--second {
+
+  margin-top: 20px;
+
+  &.social__item {
+    border-radius: 30px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+      background-color: #2196F3;
+    }
+  }
+}
+
+
+.mix-list {
+  margin: -4px -4px;
+
+  &__item {
+    padding: 4px 4px;
+  }
+ 
+  &__geoposition{
+    line-height: 1.7em;
+    color: #FFFFFF;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+}
+
+.btn {
+  &.footer--btn{
+    display: flex;
+    align-items: center;
+    /* Костыль =(( */
+    margin-left: 10px;
+  
+    padding: 10px 10px;
+  }
+
+  &__link-text {
+    padding-right: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8em;
+  }
+
+  &__link-img.is--telegram {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+
+.form-input {
+  width: 358px;
+  height: 50px;
+  box-sizing: border-box;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: #2F303A;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+}

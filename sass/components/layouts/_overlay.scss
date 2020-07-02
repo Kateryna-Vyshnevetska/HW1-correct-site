@@ -1,0 +1,35 @@
+.overlay {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.8), 
+    rgba(47, 48, 58, 0.8)),
+    url(../../img/header-compress.jpg);
+
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+
+.hero {
+  &__content {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  }
+
+  &__title{
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    max-width: 696px;
+    color: #fff;
+
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}

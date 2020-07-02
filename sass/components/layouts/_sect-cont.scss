@@ -1,0 +1,29 @@
+
+.container {
+  outline: 1px solid red;
+
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.layout__sect {
+  outline: 1px solid black; 
+
+  width: 1600px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.layout__sect-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  text-align: center;
+
+  color: $title-text-color;
+}
