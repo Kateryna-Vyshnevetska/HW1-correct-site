@@ -715,22 +715,22 @@ textarea {
 
 .box-list__icon--antenna:before {
   content: "";
-  background-image: url(../../img/antenna.svg);
+  background-image: url(../img/antenna.svg);
 }
 
 .box-list__icon--diagram:before {
   content: "";
-  background-image: url(../../img/diagram.svg);
+  background-image: url(../img/diagram.svg);
 }
 
 .box-list__icon--clock:before {
   content: "";
-  background-image: url(../../img/clock.svg);
+  background-image: url(../img/clock.svg);
 }
 
 .box-list__icon--astronaut:before {
   content: "";
-  background-image: url(../../img/astronaut.svg);
+  background-image: url(../img/astronaut.svg);
 }
 
 .cards {
@@ -819,8 +819,8 @@ textarea {
 .overlay {
   max-width: 1920px;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../../img/header-compress.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../img/header-compress.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../img/header-compress.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../img/header-compress.jpg);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
